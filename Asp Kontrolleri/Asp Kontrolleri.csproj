@@ -67,10 +67,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Button Kullanimi.aspx" />
+    <Content Include="Cok Basit Hesap Makinesi.aspx" />
+    <Content Include="Label Kullanimi.aspx" />
+    <Content Include="Textbox Kullanimi.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Button Kullanimi.aspx.cs">
+      <DependentUpon>Button Kullanimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Button Kullanimi.aspx.designer.cs">
+      <DependentUpon>Button Kullanimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cok Basit Hesap Makinesi.aspx.cs">
+      <DependentUpon>Cok Basit Hesap Makinesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cok Basit Hesap Makinesi.aspx.designer.cs">
+      <DependentUpon>Cok Basit Hesap Makinesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Label Kullanimi.aspx.cs">
+      <DependentUpon>Label Kullanimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Label Kullanimi.aspx.designer.cs">
+      <DependentUpon>Label Kullanimi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Textbox Kullanimi.aspx.cs">
+      <DependentUpon>Textbox Kullanimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Textbox Kullanimi.aspx.designer.cs">
+      <DependentUpon>Textbox Kullanimi.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
