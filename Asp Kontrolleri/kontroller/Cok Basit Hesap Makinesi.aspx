@@ -31,6 +31,8 @@
             <br />
             <label>Sonuç</label>
             <asp:TextBox ID="tb_sonuc" runat="server"/>
+            <br /><br />
+            <asp:Label ID="lbl_mesaj" runat="server"></asp:Label>
         </div>
     </form>
 </body>

@@ -28,7 +28,10 @@ namespace Asp_Kontrolleri
                 double toplam = sayi1 + sayi2;
                 tb_sonuc.Text = Convert.ToString(toplam);
             }
-            
+            else
+            {
+                lbl_mesaj.Text = "Lütfen boş alan bırakmayınız!";
+            }
         }
 
         protected void btn_cikar_Click(object sender, EventArgs e)
@@ -40,7 +43,10 @@ namespace Asp_Kontrolleri
                 double toplam = sayi1 - sayi2;
                 tb_sonuc.Text = Convert.ToString(toplam);
             }
-            
+            else
+            {
+                lbl_mesaj.Text = "Lütfen boş alan bırakmayınız!";
+            }
         }
 
         protected void btn_bol_Click(object sender, EventArgs e)
@@ -52,7 +58,10 @@ namespace Asp_Kontrolleri
                 double toplam = sayi1 / sayi2;
                 tb_sonuc.Text = Convert.ToString(toplam);
             }
-            
+            else
+            {
+                lbl_mesaj.Text = "Lütfen boş alan bırakmayınız!";
+            }
         }
 
         protected void btn_carp_Click(object sender, EventArgs e)
@@ -64,7 +73,10 @@ namespace Asp_Kontrolleri
                 double toplam = sayi1 * sayi2;
                 tb_sonuc.Text = Convert.ToString(toplam);
             }
-            
+            else
+            {
+                lbl_mesaj.Text = "Lütfen boş alan bırakmayınız!";
+            }
         }
     }
 }
