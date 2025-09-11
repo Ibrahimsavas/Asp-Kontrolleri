@@ -21,34 +21,50 @@ namespace Asp_Kontrolleri
 
         protected void btn_topla_Click(object sender, EventArgs e)
         {
-            int sayi1 = Convert.ToInt32(tb_sayi1.Text);
-            int sayi2 = Convert.ToInt32(tb_sayi2.Text);
-            int toplam = sayi1 + sayi2;
-            tb_sonuc.Text = Convert.ToString(toplam);
+            if(!string.IsNullOrEmpty(tb_sayi1.Text) && !string.IsNullOrEmpty(tb_sayi2.Text))
+            {
+                double sayi1 = Convert.ToInt32(tb_sayi1.Text);
+                double sayi2 = Convert.ToInt32(tb_sayi2.Text);
+                double toplam = sayi1 + sayi2;
+                tb_sonuc.Text = Convert.ToString(toplam);
+            }
+            
         }
 
         protected void btn_cikar_Click(object sender, EventArgs e)
         {
-            int sayi1 = Convert.ToInt32(tb_sayi1.Text);
-            int sayi2 = Convert.ToInt32(tb_sayi2.Text);
-            int toplam = sayi1 - sayi2;
-            tb_sonuc.Text = Convert.ToString(toplam);
+            if (!string.IsNullOrEmpty(tb_sayi1.Text) && !string.IsNullOrEmpty(tb_sayi2.Text))
+            {
+                double sayi1 = Convert.ToInt32(tb_sayi1.Text);
+                double sayi2 = Convert.ToInt32(tb_sayi2.Text);
+                double toplam = sayi1 - sayi2;
+                tb_sonuc.Text = Convert.ToString(toplam);
+            }
+            
         }
 
         protected void btn_bol_Click(object sender, EventArgs e)
         {
-            int sayi1 = Convert.ToInt32(tb_sayi1.Text);
-            int sayi2 = Convert.ToInt32(tb_sayi2.Text);
-            int toplam = sayi1 / sayi2;
-            tb_sonuc.Text = Convert.ToString(toplam);
+            if (!string.IsNullOrEmpty(tb_sayi1.Text) && !string.IsNullOrEmpty(tb_sayi2.Text))
+            {
+                double sayi1 = Convert.ToInt32(tb_sayi1.Text);
+                double sayi2 = Convert.ToInt32(tb_sayi2.Text);
+                double toplam = sayi1 / sayi2;
+                tb_sonuc.Text = Convert.ToString(toplam);
+            }
+            
         }
 
         protected void btn_carp_Click(object sender, EventArgs e)
         {
-            int sayi1 = Convert.ToInt32(tb_sayi1.Text);
-            int sayi2 = Convert.ToInt32(tb_sayi2.Text);
-            int toplam = sayi1 * sayi2;
-            tb_sonuc.Text = Convert.ToString(toplam);
+            if (!string.IsNullOrEmpty(tb_sayi1.Text) && !string.IsNullOrEmpty(tb_sayi2.Text))
+            {
+                double sayi1 = Convert.ToInt32(tb_sayi1.Text);
+                double sayi2 = Convert.ToInt32(tb_sayi2.Text);
+                double toplam = sayi1 * sayi2;
+                tb_sonuc.Text = Convert.ToString(toplam);
+            }
+            
         }
     }
 }
