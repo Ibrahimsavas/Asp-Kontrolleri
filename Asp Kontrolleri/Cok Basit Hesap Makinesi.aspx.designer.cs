@@ -51,6 +51,33 @@ namespace Asp_Kontrolleri
         protected global::System.Web.UI.WebControls.Button btn_topla;
 
         /// <summary>
+        /// btn_cikar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_cikar;
+
+        /// <summary>
+        /// btn_bol control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_bol;
+
+        /// <summary>
+        /// btn_carp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_carp;
+
+        /// <summary>
         /// tb_sonuc control.
         /// </summary>
         /// <remarks>

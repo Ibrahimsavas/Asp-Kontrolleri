@@ -23,7 +23,10 @@
             <label>Sayı 2</label>
             <asp:TextBox ID="tb_sayi2" runat="server"/>
             <br /><br />
-            <asp:Button ID="btn_topla" runat="server" />
+            <asp:Button ID="btn_topla" Text="Toplama" runat="server" OnClick="btn_topla_Click" />
+            <asp:Button ID="btn_cikar" Text="Çıkarma" runat="server" OnClick="btn_cikar_Click" />
+            <asp:Button ID="btn_bol" Text="Bölme" runat="server" OnClick="btn_bol_Click" />
+            <asp:Button ID="btn_carp" Text="Çarpma" runat="server" OnClick="btn_carp_Click" />
             <br />
             <br />
             <label>Sonuç</label>
