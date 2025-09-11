@@ -11,10 +11,13 @@ namespace Asp_Kontrolleri
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-            tb_sayi1.Text = "";
-            tb_sayi2.Text = "";
-            tb_sonuc.Text = "";
-		}
+            if (!IsPostBack)
+            {
+                tb_sayi1.Text = "";
+                tb_sayi2.Text = "";
+                tb_sonuc.Text = "";
+            }
+        }
 
         protected void btn_topla_Click(object sender, EventArgs e)
         {
