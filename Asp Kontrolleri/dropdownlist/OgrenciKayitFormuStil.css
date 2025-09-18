@@ -1,61 +1,83 @@
 ﻿body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
-    min-height: 100vh;
+    background: #181818;
+    font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0;
 }
 
 .form-container {
-    width: 350px;
-    padding: 32px 24px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(33, 147, 176, 0.15);
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    background: #222;
+    max-width: 480px;
+    margin: 48px auto;
+    padding: 32px 28px 24px 28px;
+    border-radius: 8px;
+    box-shadow: 0 0 24px #000a;
+    border: 2px solid #2ecc40;
 }
 
-.form-container h2 {
+h2 {
     text-align: center;
-    margin-bottom: 12px;
-    color: #2193b0;
+    color: #2ecc40;
+    margin-bottom: 28px;
+    font-size: 1.6rem;
+    font-family: inherit;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 4px #2ecc4088;
 }
 
-.form-container label {
-    font-weight: 500;
+label {
+    display: block;
     margin-bottom: 6px;
-    color: #333;
+    color: #00ff99;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    letter-spacing: 0.03em;
 }
-.dropdown {
-    width: 220px;
-    padding: 6px;
-    margin-bottom: 12px;
-    border: 1px solid #aaa;
+
+input[type="text"], .custom-dropdown, .dropdown {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #2ecc40;
     border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 15px;
+    background: #181818;
+    font-size: 1rem;
+    color: #2ecc40;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
 }
+
+    input[type="text"]:focus, .custom-dropdown:focus, .dropdown:focus {
+        border-color: #00ff99;
+        background: #222;
+        color: #00ff99;
+    }
+
 .linkbutton {
-    display: inline-block;
-    padding: 8px 20px;
-    background-color: #0078d4;
-    color: #fff !important;
-    border: none;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background: #181818;
+    color: #2ecc40 !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 2px solid #2ecc40;
     border-radius: 4px;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.2s;
     text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    margin-top: 10px;
+    box-shadow: 0 0 8px #2ecc4066;
 }
 
     .linkbutton:hover {
-        background-color: #005a9e;
-        color: #fff !important;
+        background: #2ecc40;
+        color: #181818 !important;
+        border-color: #00ff99;
         text-decoration: none;
     }
-
