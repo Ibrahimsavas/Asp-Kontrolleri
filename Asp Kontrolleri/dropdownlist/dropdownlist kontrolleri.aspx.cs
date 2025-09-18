@@ -18,5 +18,19 @@ namespace Asp_Kontrolleri.dropdownlist
         {
 
         }
+
+        protected void btn_yazdir_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(tb_eklenecek.Text))
+            {
+                ddl_eklenenler.Items.Add(tb_eklenecek.Text);
+                tb_eklenecek.Text = string.Empty;
+            }
+        }
+
+        protected void btn_eklenecek_Click(object sender, EventArgs e)
+        {
+            lbl_secilmis.Text = "Text = " + ddl_eklenenler.SelectedItem.Text + " - Value = " + ddl_eklenenler.SelectedItem.Value;
+        }
     }
 }

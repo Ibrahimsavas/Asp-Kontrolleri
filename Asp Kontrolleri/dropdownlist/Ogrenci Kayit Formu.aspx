@@ -6,6 +6,7 @@
     <link href="OgrenciKayitFormuStil.css" rel="stylesheet" />
 </head>
 <body>
+    <canvas id="matrix-canvas"></canvas>
     <form id="form1" runat="server">
         <div class="form-container">
             <h2>Öğrenci Kayıt Formu</h2>
@@ -61,5 +62,40 @@
             <asp:LinkButton ID="btn_kaydet" runat="server" Text="Kaydet" CssClass="linkbutton" />
         </div>
     </form>
+    <script>
+    const canvas = document.getElementById('matrix-canvas');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    const fontSize = 18;
+    const columns = Math.floor(canvas.width / fontSize);
+    const drops = Array(columns).fill(1);
+
+    function drawMatrix() {
+        ctx.fillStyle = 'rgba(24,24,24,0.9)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.font = fontSize + "px 'Fira Mono', 'Consolas', monospace";
+        ctx.fillStyle = '#2ecc40';
+
+        for (let i = 0; i < drops.length; i++) {
+            const text = Math.random() > 0.5 ? '0' : '1';
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
+            drops[i]++;
+        }
+    }
+
+    setInterval(drawMatrix, 120);
+</script>
 </body>
 </html>

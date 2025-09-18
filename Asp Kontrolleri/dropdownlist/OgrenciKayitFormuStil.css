@@ -81,3 +81,17 @@ input[type="text"], .custom-dropdown, .dropdown {
         border-color: #00ff99;
         text-decoration: none;
     }
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.form-container {
+    position: relative;
+    z-index: 1;
+}

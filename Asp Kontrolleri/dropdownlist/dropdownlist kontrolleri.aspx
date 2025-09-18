@@ -24,6 +24,16 @@
             <div class="form-section">
                 <label>Başkan Seçiniz</label>
             </div>
+            <div>
+                <label>Eklenecek veri</label>
+                <asp:TextBox ID="tb_eklenecek" runat="server"></asp:TextBox>
+                <asp:Button ID="btn_eklenecek" runat="server" Text="Ekle" OnClick="btn_eklenecek_Click" />
+                <br />
+                <asp:DropDownList ID="ddl_eklenenler" runat="server"></asp:DropDownList>
+                <asp:Button ID="btn_yazdir" runat="server" Text="Yazdır" OnClick="btn_yazdir_Click" />
+                <br />
+                <asp:Label ID="lbl_secilmis" runat="server"></asp:Label>
+            </div>
         </div>
     </form>
 </body>
