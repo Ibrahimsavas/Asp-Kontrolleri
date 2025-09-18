@@ -67,6 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dropdownlist\dropdownlist kontrolleri.aspx" />
+    <Content Include="dropdownlist\Ogrenci Kayit Formu.aspx" />
+    <Content Include="dropdownlist\OgrenciKayitFormuStil.css" />
     <Content Include="giris ekarni\giris ekrani css.css" />
     <Content Include="kontroller\Button Kullanimi.aspx" />
     <Content Include="kontroller\Cok Basit Hesap Makinesi.aspx" />
@@ -76,6 +79,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dropdownlist\dropdownlist kontrolleri.aspx.cs">
+      <DependentUpon>dropdownlist kontrolleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dropdownlist\dropdownlist kontrolleri.aspx.designer.cs">
+      <DependentUpon>dropdownlist kontrolleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dropdownlist\Ogrenci Kayit Formu.aspx.cs">
+      <DependentUpon>Ogrenci Kayit Formu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dropdownlist\Ogrenci Kayit Formu.aspx.designer.cs">
+      <DependentUpon>Ogrenci Kayit Formu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="kontroller\Button Kullanimi.aspx.cs">
       <DependentUpon>Button Kullanimi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
