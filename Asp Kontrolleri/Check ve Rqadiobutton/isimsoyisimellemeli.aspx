@@ -31,7 +31,14 @@
             <asp:TextBox ID="tb_yas" runat="server" TextMode="Number" />
         </div>
         <div>
-            <asp:Button ID="btn_kaydet" runat="server" Text="Kaydet"/>
+            <label for="ddl_kisiler">Kayıtlı Kişiler:</label>
+            <asp:DropDownList ID="ddl_kisiler" runat="server" Width="200px" />
+        </div>
+        <div>
+            <asp:Button ID="btn_kaydet" runat="server" Text="Kaydet" OnClick="btn_kaydet_Click"/>
+        </div>
+        <div class="grid-wrapper">
+            <asp:GridView ID="gv_kisiler" runat="server" CssClass="aspNetGridView" AutoGenerateColumns="true" />
         </div>
     </form>
 </body>

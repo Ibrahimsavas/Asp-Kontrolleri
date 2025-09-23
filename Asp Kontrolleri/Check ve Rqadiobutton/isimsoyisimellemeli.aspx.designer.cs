@@ -78,6 +78,15 @@ namespace Asp_Kontrolleri.Check_ve_Rqadiobutton
         protected global::System.Web.UI.WebControls.TextBox tb_yas;
 
         /// <summary>
+        /// ddl_kisiler control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_kisiler;
+
+        /// <summary>
         /// btn_kaydet control.
         /// </summary>
         /// <remarks>
@@ -85,5 +94,14 @@ namespace Asp_Kontrolleri.Check_ve_Rqadiobutton
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_kaydet;
+
+        /// <summary>
+        /// gv_kisiler control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gv_kisiler;
     }
 }
