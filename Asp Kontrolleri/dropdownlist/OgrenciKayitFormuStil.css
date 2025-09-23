@@ -1,86 +1,10 @@
 ﻿body {
-    background: #181818;
+    background: #fff;
     font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
     margin: 0;
     padding: 0;
 }
 
-.form-container {
-    background: #222;
-    max-width: 480px;
-    margin: 48px auto;
-    padding: 32px 28px 24px 28px;
-    border-radius: 8px;
-    box-shadow: 0 0 24px #000a;
-    border: 2px solid #2ecc40;
-}
-
-h2 {
-    text-align: center;
-    color: #2ecc40;
-    margin-bottom: 28px;
-    font-size: 1.6rem;
-    font-family: inherit;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    text-shadow: 0 0 4px #2ecc4088;
-}
-
-label {
-    display: block;
-    margin-bottom: 6px;
-    color: #00ff99;
-    font-size: 1rem;
-    font-family: inherit;
-    font-weight: bold;
-    letter-spacing: 0.03em;
-}
-
-input[type="text"], .custom-dropdown, .dropdown {
-    width: 100%;
-    padding: 10px 12px;
-    margin-bottom: 18px;
-    border: 1px solid #2ecc40;
-    border-radius: 4px;
-    background: #181818;
-    font-size: 1rem;
-    color: #2ecc40;
-    font-family: inherit;
-    box-sizing: border-box;
-    outline: none;
-    transition: border-color 0.2s, background 0.2s;
-}
-
-    input[type="text"]:focus, .custom-dropdown:focus, .dropdown:focus {
-        border-color: #00ff99;
-        background: #222;
-        color: #00ff99;
-    }
-
-.linkbutton {
-    display: block;
-    width: 100%;
-    padding: 12px 0;
-    background: #181818;
-    color: #2ecc40 !important;
-    font-weight: bold;
-    font-size: 1.1rem;
-    border: 2px solid #2ecc40;
-    border-radius: 4px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s, border-color 0.2s;
-    margin-top: 10px;
-    box-shadow: 0 0 8px #2ecc4066;
-}
-
-    .linkbutton:hover {
-        background: #2ecc40;
-        color: #181818 !important;
-        border-color: #00ff99;
-        text-decoration: none;
-    }
 #matrix-canvas {
     position: fixed;
     top: 0;
@@ -92,6 +16,80 @@ input[type="text"], .custom-dropdown, .dropdown {
 }
 
 .form-container {
+    background: rgba(255,255,255,0.95);
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 32px 28px 24px 28px;
+    border-radius: 8px;
+    box-shadow: 0 0 24px #0002;
+    border: 2px solid #000;
     position: relative;
     z-index: 1;
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 28px;
+    font-size: 1.6rem;
+    font-family: inherit;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 4px #0001;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #000;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+input[type="text"], .custom-dropdown, .dropdown {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 1rem;
+    color: #000;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+input[type="text"]:focus, .custom-dropdown:focus, .dropdown:focus {
+    border-color: #000;
+    background: #eee;
+    color: #000;
+}
+
+.linkbutton {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background: #fff;
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 2px solid #000;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    margin-top: 10px;
+    box-shadow: 0 0 8px #0001;
+}
+
+.linkbutton:hover {
+    background: #000;
+    color: #fff !important;
+    border-color: #000;
+    text-decoration: none;
 }

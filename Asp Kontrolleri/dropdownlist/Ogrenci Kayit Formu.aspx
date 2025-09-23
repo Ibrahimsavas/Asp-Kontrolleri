@@ -62,7 +62,7 @@
             <asp:LinkButton ID="btn_kaydet" runat="server" Text="Kaydet" CssClass="linkbutton" />
         </div>
     </form>
-    <script>
+<script>
     const canvas = document.getElementById('matrix-canvas');
     const ctx = canvas.getContext('2d');
 
@@ -78,11 +78,11 @@
     const drops = Array(columns).fill(1);
 
     function drawMatrix() {
-        ctx.fillStyle = 'rgba(24,24,24,0.9)';
+        ctx.fillStyle = '#fff';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         ctx.font = fontSize + "px 'Fira Mono', 'Consolas', monospace";
-        ctx.fillStyle = '#2ecc40';
+        ctx.fillStyle = 'rgba(0,0,0,0.9)'; 
 
         for (let i = 0; i < drops.length; i++) {
             const text = Math.random() > 0.5 ? '0' : '1';

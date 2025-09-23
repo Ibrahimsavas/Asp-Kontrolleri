@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Check ve Rqadiobutton\isimsoyisim.css" />
+    <Content Include="Check ve Rqadiobutton\isimsoyisimellemeli.aspx" />
     <Content Include="dropdownlist\dropdownlist kontrolleri.aspx" />
     <Content Include="dropdownlist\Ogrenci Kayit Formu.aspx" />
     <Content Include="dropdownlist\OgrenciKayitFormuStil.css" />
@@ -79,6 +81,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Check ve Rqadiobutton\isimsoyisimellemeli.aspx.cs">
+      <DependentUpon>isimsoyisimellemeli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Check ve Rqadiobutton\isimsoyisimellemeli.aspx.designer.cs">
+      <DependentUpon>isimsoyisimellemeli.aspx</DependentUpon>
+    </Compile>
     <Compile Include="dropdownlist\dropdownlist kontrolleri.aspx.cs">
       <DependentUpon>dropdownlist kontrolleri.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -1,0 +1,78 @@
+﻿body {
+    background: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #111;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #222;
+}
+
+    form div {
+        margin-bottom: 18px;
+    }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea,
+select,
+.aspNetTextBox {
+    width: 100%;
+    padding: 16px 12px;
+    font-size: 1.15em;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
+
+input[type="radio"] {
+    accent-color: #fff;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+asp\:RadioButton {
+    font-weight: bold;
+    color: #fff;
+}
+
+asp\:Button, input[type="submit"], button {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 0;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+    asp\:Button:hover, input[type="submit"]:hover, button:hover {
+        background: #000;
+        color: #fff;
+        border: 2px solid #fff;
+    }
